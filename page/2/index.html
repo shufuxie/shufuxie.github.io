@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>沈·观·复 - 沉以观，观而复</title><meta name="author" content="小沈的朋友圈"><meta name="copyright" content="小沈的朋友圈"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="沉静为观，往复成思">
+<meta property="og:type" content="website">
+<meta property="og:title" content="沈·观·复">
+<meta property="og:url" content="https://shufuxie.top/page/2/index.html">
+<meta property="og:site_name" content="沈·观·复">
+<meta property="og:description" content="沉静为观，往复成思">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.shufuxie.top/img/20260427145040344.png">
+<meta property="article:author" content="小沈的朋友圈">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.shufuxie.top/img/20260427145040344.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://shufuxie.top/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '沈·观·复',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="bg-animation" id="web_bg" style="background-image: url(https://img.shufuxie.top/img/20260427164013782.png);"></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://img.shufuxie.top/img/20260427152850348.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="https://img.shufuxie.top/img/20260427145040344.png" alt="Logo"><span class="site-name">沈·观·复</span></a></span><div id="menus"></div></nav><div id="site-info"><h1 id="site-title">沈·观·复</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/05/18/%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6%E6%95%B4%E7%90%86%E5%88%86%E4%BA%AB/" title="笔记软件整理分享">笔记软件整理分享</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-05-18T12:38:42.000Z" title="发表于 2025-05-18 20:38:42">2025-05-18</time></span></div><div class="content">写在前面这是给自己用的整理信息的工具，不过我认为工具是术，学习的内容是道，术要为道服务，不要为了折腾工具而折腾工具，容易疲劳而没有啥收获。 目前来说，是完成三更，建议阅读时，看看一更的策略和选取逻辑等，然后优先看三更内容，希望能帮到各位读者朋友。 策略首先，对策是根据已有知识流和潜在学习的知识流，然后分析会用到什么形式的内容，有的放矢，选择适合自己的方式。 知识流知乎等攻略软件→链接🔗 网页博客→链接🔗整理，也可以制作为epub，再根据calibre修改需要的格式如pdf b站大学→视频链接🔗 cctalk→没什么方案，需要自己整理 公众号文章→链接🔗 社区内容→文字型内容 电子书→pdf或者epub 灵感→文字型内容 内容分析其实大体看看，无非需要处理链接（包括文字型内容和视频型内容）、散碎型内容、pdf&#x2F;epub等格式文件。 软件选取文字链接型，因为移动端也有使用场景，所以设置了cubox作为同步软件，cubox有付费版，但是免费版符合我使用需求了，所以暂时没有考虑升级，不过cubox还是挺好用的，操作简单，适合上手使用，我觉得是很合格的商业产品，简便而又好...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/05/14/kindle%E4%B9%A6%E7%AD%BE%E6%95%B4%E7%90%86%E7%A8%8B%E5%BA%8F/" title="kindle书签整理程序分享">kindle书签整理程序分享</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-05-14T14:43:09.000Z" title="发表于 2025-05-14 22:43:09">2025-05-14</time></span></div><div class="content">引子上一周没得空去更新，这周就水篇博客，先介绍背景，我的主力阅读器是kindle paperwhite4，但是呢，前一阵子用书伴网的那个整理标注的书见网站，网站反映有问题（当然在后来，发邮件给作者，作者很负责，也是很快修复了，我也不知道作者怎么搞的，好厉害），于是索性想了一下，ai这么发达，不如和ai合作搞出来一个整理kindle标注的软件，本地使用，用起来也方便整理，最后的效果也不错。下面放两张图片，分别是整理笔记的目录页和正文部分，当然我的图床访问会比较慢，看不到图片也不影响阅读，嘻嘻。这次分享的两个程序都是和ai一起做的，分别是整理的py软件和自动化运行py软件的bat文件。   开始首先需要部署python环境，这个去官网下载就可以啦。 然后这两个程序可以分别命名kindle_clippings_ultimate.py和run_ultimate_converter.bat  🆗，将其和您的kindle–documents–My Clippings.txt放在一个文件夹里。 接下来，🆗我们开始吧 kindle_clippings_ultimate.py123456789...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/05/05/week3%20%E9%99%AA%E4%BC%B4%EF%BC%8C%E5%85%85%E5%AE%9E%EF%BC%8C%E5%BF%AB%E4%B9%90/" title="week3 陪伴，充实，快乐">week3 陪伴，充实，快乐</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-05-05T08:27:03.000Z" title="发表于 2025-05-05 16:27:03">2025-05-05</time></span></div><div class="content">这一周正逢五一假期，也是稍微休息了一下，最近读了几篇公众号文章，感受挺深的，一篇是假期彻底躺平，只会让你越休息越累，一篇是这5个行为你以为在休息，其实非常耗精力！，还有今夜，无眠！，今天就主要围绕这三篇文章聊聊。 chapter 1拓展爱好的方式，比如文章1中提到的  如果你真的喜欢看电视，问问自己：你喜欢它的什么呢？是和同龄人谈论最新剧集时产生的社交联系吗？怎样设定一个目标，强化你对这项活动已有的喜爱呢？也许可以每月举办一次观影之夜，你和朋友们一起观看一部大家都没看过的影片，这样既能拓宽视野，又能加深友谊。  依然是追剧看电影这个选项，但是也可以借此产生社交联系，同时交流感受，就像在豆瓣分享短评一样，大家可以互相交流，拓宽自己追剧的感受。说到这里，还想说一下陪伴，陪伴，来自于我们的亲人、朋友、伴侣等，多陪伴一下，就是珍惜眼前人，至少于我而言，带来了很大的满足感和幸福感，或许，这就是陪伴＋社交的力量吧，此处借大家亚里士多德在《政治学》中的观点概括：从本质上讲，人是一种社会性动物。 当然，享受自我是休闲时间的主旋律，也不能矫枉过正，如文章1中提到  目的不是把爱好变成义务或第二份工...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/04/26/week2%20%E6%8E%A2%E7%B4%A2%E7%9D%80%EF%BC%8C%E5%85%85%E5%AE%9E%E7%9D%80%EF%BC%8C%E5%89%8D%E8%BF%9B%E7%9D%80%EF%BC%8C%E5%9D%9A%E6%8C%81%E7%9D%80/" title="week2 探索着，充实着，前进着，坚持着">week2 探索着，充实着，前进着，坚持着</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-04-26T13:45:33.000Z" title="发表于 2025-04-26 21:45:33">2025-04-26</time></span></div><div class="content">这一周，正如标题而言，也是在不断探索，尽可能充实自己的生活与思考过程，同时，在上班之余，和以往一样照常跟着网课，感觉阅读和学习，让自己变得更加平静，诸葛亮先生在《诫子书》说到：“夫君子之行，静以修身，俭以养德。非淡泊无以明志，非宁静无以致远。夫学须静也，才须学也，非学无以广才，非志无以成学。淫慢则不能励精，险躁则不能治性。年与时驰，意与日去，遂成枯落，多不接世，悲守穷庐，将复何及！”勤与俭与静等品质实在是让我警醒，不能一蹴而就，要不断探索、充实、前进，然后坚持下去。 读书最近，在读《回到明朝当王爷》，可以当成个小爽文，不对，是长爽文，哈哈哈。我的拙见是：读书，读小说。没有高低贵贱之分，小说有趣，生活的一个调节，也是减压的一个方式，读书治学，又可以从专业和业余两个角度展开，专业书籍，可以提高自己的硬本领，有助于改善自己的工作能力以及提高自己的就业机率；业余书籍，又可以开拓自己的视野，记得之前看考研的专业书时，编写老师引用‘一个人，即使是教授，但是对所学专业领域之外的内容可能知之甚少’（大概意思，具体内容我也没记住，嘿嘿），大佬如此，我作为一个普通人，一只笨鸟，又何尝不是呢，所以，我...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/04/20/week1%20%E6%85%A2%E6%85%A2%E6%9D%A5,%E7%BB%88%E8%BA%AB%E5%AD%A6%E4%B9%A0/" title="week1 慢慢来，终身学习">week1 慢慢来，终身学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-04-20T13:48:25.000Z" title="发表于 2025-04-20 21:48:25">2025-04-20</time></span></div><div class="content">刚刚夜跑回来，开始写这一周的反思。这一周，没看什么书，在追《凡人修仙传》，跟着韩立的修炼，仿佛自己也置身于修仙世界中，发现修仙类的小说确实有着独特的魅力，制作组真的很厉害，动画效果震撼、剧情展开娓娓道来，引人入胜，欲罢不能，甚至于昨天看得夜里有些失眠，激动得久久无法入眠。 书读少了想了想，当年明月确实太厉害了，在天涯社区（还是哪里我也不知道）不断更新，终于完成了几本明朝那些事儿，我也是一个小小的历史爱好者，不过，我常把一句话挂在嘴边：“书读少了”。这不是谦虚，这确实是我的内心写照，无论是脍炙人口的著作，还是近些年流行的作品，都没有详尽了解，看来自己也确实该努努力，保持终身学习的态度，坚持阅读。 琐碎替代不了系统，信息并不代表知识今天下午刷了刷抖音，可以说信息如洪水一般进入了大脑，但是发现，琐碎的信息虽然多，但是能得到的内容是什么呢，可以说微乎其微，当然，为了消遣去刷抖音是个很好的借口，不过，真的如此吗？或许，正是这样的想法，让我们越来越想去刷下一个视频，我咨询了一下ai，他提到这本质还是行为成瘾，其提到了三个重要的背后机制。 首先，即时奖励陷阱：  短视频平台利用”可变比率强化”...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/04/13/%E5%86%99%E7%BB%99%E5%BC%80%E5%A7%8B%EF%BC%8C%E5%86%99%E7%BB%99%E6%9C%AA%E6%9D%A5/" title="写给开始，写给未来">写给开始，写给未来</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-04-13T02:01:22.000Z" title="发表于 2025-04-13 10:01:22">2025-04-13</time></span></div><div class="content">旅程的开始这是我在这个博客小站写的第一篇博客，所以这篇文章也没有很高大上的内容、知识，只是对博客，对读者打一个友好的招呼。第一篇要写点什么呢？我觉得可以从为什么我要建立这个博客小站，我的更新内容方向，更新周期，期望几个方向出发。 为什么为什么要建立小站呢？建立博客小站，主要是想输出一点有趣的内容，给自己以及给读者带来一点快乐，当然，如果自己所表达的东西能对读者有所帮助那也是一件幸事；同时嘞，我的文笔不好，所以，也想借由写博客长文的方式来提高自己的表达能力，希望自己的表达可以更加准确，能“信达雅”地表达自己的观点；最后，写东西，我发现是一个不错的思考过程，思维就像水一样流动，是一个舒畅的过程，自己也能找到一点平静。说到这里，想谈一下为什么这个网站要叫“沈观复”呢，其实这个也借鉴了ai的建议，但是我发现却又非常适合，沈在繁体字里好像通沉，而“观复”一语出老子《道德经》第十六章：“致虚极，守静笃，万物并作，吾以观复”。 （参考了观复博物馆简介）我想，沈观复，可以看作我在书写的同时沉下心来，回顾自己的生活，不断思考，做到“沉静为观，往复成思”，曾子也提到“吾日三省吾身”，所以，这个博客写...</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://img.shufuxie.top/img/20260427145040344.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">小沈的朋友圈</div><div class="author-info-description">沉静为观，往复成思</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" href="shufuxie@outlook.com"><i class="fas fa-envelope"></i><span>Contact Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/04/27/hello-world/" title="Hello World">Hello World</a><time datetime="2026-04-27T11:08:13.791Z" title="发表于 2026-04-27 19:08:13">2026-04-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/picture-bed-test-2llqsf.html" title="图床测试">图床测试</a><time datetime="2026-04-27T06:01:46.000Z" title="发表于 2026-04-27 14:01:46">2026-04-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/test-i2qtt.html" title="标签测试">标签测试</a><time datetime="2026-04-26T09:23:50.000Z" title="发表于 2026-04-26 17:23:50">2026-04-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/essay-z2cnvt.html" title="随笔">随笔</a><time datetime="2026-04-26T08:51:12.000Z" title="发表于 2026-04-26 16:51:12">2026-04-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/test-oneclick-publishing-zmrnwa.html" title="一键发布">一键发布</a><time datetime="2026-04-26T08:35:01.000Z" title="发表于 2026-04-26 16:35:01">2026-04-26</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E8%87%AA%E7%94%A8/" style="font-size: 1.1em; color: #999">自用</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 1.37em; color: #99a4b2">测试</a> <a href="/tags/%E5%91%A8%E8%AE%B0/" style="font-size: 1.37em; color: #99a4b2">周记</a> <a href="/tags/%E5%BC%80%E5%A7%8B/" style="font-size: 1.1em; color: #999">开始</a> <a href="/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" style="font-size: 1.23em; color: #999ea6">技术杂谈</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%9D%82%E8%B0%88/" style="font-size: 1.5em; color: #99a9bf">学习杂谈</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/04/">
+            <span class="card-archive-list-date">
+              四月 2026
+            </span>
+            <span class="card-archive-list-count">5</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/07/">
+            <span class="card-archive-list-date">
+              七月 2025
+            </span>
+            <span class="card-archive-list-count">3</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/05/">
+            <span class="card-archive-list-date">
+              五月 2025
+            </span>
+            <span class="card-archive-list-count">5</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/04/">
+            <span class="card-archive-list-date">
+              四月 2025
+            </span>
+            <span class="card-archive-list-count">3</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">16</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-04-27T11:08:25.546Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://img.shufuxie.top/img/20260427184000284.png);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By 小沈的朋友圈</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
